@@ -29,7 +29,7 @@ def test_k_big():
 
 def test_duplicates():
     arr = [3,3,3,2,2,1]
-    assert sort_k_sorted(arr, 3) == [1,2,2,3,3,3]
+    assert sort_k_sorted(arr, 5) == [1,2,2,3,3,3]
 
 # --- complex (3) ---
 def test_already_sorted_large_k():
