@@ -1,7 +1,7 @@
 import importlib.util, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-SPEC = importlib.util.spec_from_file_location("main", ROOT / "conveyor_lane.py")
+SPEC = importlib.util.spec_from_file_location("main", ROOT /"src"/ "conveyor_lane.py")
 main = importlib.util.module_from_spec(SPEC); SPEC.loader.exec_module(main)
 sort_k_sorted = main.sort_k_sorted
 
